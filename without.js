@@ -20,7 +20,29 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const without = function(source, itemsToRemove) {
   let result = [];
-  
+
+  for (let i = 0; i < source.length; i++) {
+    if (!itemsToRemove.includes(source[i])) {
+      result.push(source[i]);
+    }
+  }
+  return result;
+};
+
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+assertArraysEqual(without(["this", "old", "dog", "mac", "dog"], ["dog", "macaroni"]), ["this", "old", "mac"]);
+assertArraysEqual(without(["loopy", "lighthouse", "loopylighthouse", "batty", "beacon", "battybeacon"], ["loopy", "batty", "lighthouse", "beacon"]), ["loopylighthouse", "battybeacon"]);
+
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]);
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+
+
+/*
+const without = function(source, itemsToRemove) {
+  let result = [];
   const removeItem = function(item, arrayOfItemsToRemove) { // should this item be removed?
     for (let i = 0; i < arrayOfItemsToRemove.length; i++) {
       if (item === arrayOfItemsToRemove[i]) {
@@ -36,13 +58,6 @@ const without = function(source, itemsToRemove) {
     }
   }
   return result;
-};
+}
 
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
-assertArraysEqual(without(["this", "old", "dog", "mac", "dog"], ["dog", "macaroni"]), ["this", "old", "mac"]);
-assertArraysEqual(without(["loopy", "lighthouse", "loopylighthouse", "batty", "beacon", "battybeacon"], ["loopy", "batty", "lighthouse", "beacon"]), ["loopylighthouse", "battybeacon"]);
-
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+  */

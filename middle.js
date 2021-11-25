@@ -34,7 +34,7 @@ const middle = function(arr) {
     result.push(firstMiddleItem, secondMiddleItem);
   }
   return result;
-}
+};
 
 
 
