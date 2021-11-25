@@ -29,7 +29,7 @@ const eqObjects = function(object1, object2) {
       if (!eqArrays(object1[key], object2[key])) { // if arrays are not equal
         return false;
       }
-    } else if (object1[key] !== object2[key]) {// if property of a given key in obj1 !==  key with same name in obj2
+    } else if (object1[key] !== object2[key]) {// if property of a given key in obj1 !==  property of key with same name in obj2
       return false;
     }
   }
