@@ -53,8 +53,10 @@ assertEqual(returnsSheep, 'sheep');
 const olympians = {
   dionysus: { symbol: 'grapes' },
   prometheus: { symbol: 'fire' },
-  poseidon: { symbol: 'trident',
-    personalInfo: { residence: 'ocean'} },
+  poseidon:
+  { symbol: 'trident',
+    personalInfo: { residence: 'ocean'}
+  },
   zeus: { symbol: 'thunderbolt' },
   hades: { symbol: 'helm of death' }
 };
