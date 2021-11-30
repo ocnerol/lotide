@@ -42,11 +42,13 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-const result1 = letterPositions('hello');
-assertArraysEqual(result1['e'], [1]);    // 'e' found in pos. 1
-assertArraysEqual(result1['h'], [0]);    // 'h' found in pos. 0
-assertArraysEqual(result1['l'], [2, 3]); // 'l' found in pos. 2, 3
-assertArraysEqual(result1['o'], [4]);    // 'o' found in pos. 4
+// const result1 = letterPositions('hello');
+// assertArraysEqual(result1['e'], [1]);    // 'e' found in pos. 1
+// assertArraysEqual(result1['h'], [0]);    // 'h' found in pos. 0
+// assertArraysEqual(result1['l'], [2, 3]); // 'l' found in pos. 2, 3
+// assertArraysEqual(result1['o'], [4]);    // 'o' found in pos. 4
 
-assertArraysEqual(letterPositions('lighthouse in the house')['h'], [3, 5, 15, 18]);
-assertArraysEqual(letterPositions('lighthouse in the house')['e'], [9, 16, 22]);
+// assertArraysEqual(letterPositions('lighthouse in the house')['h'], [3, 5, 15, 18]);
+// assertArraysEqual(letterPositions('lighthouse in the house')['e'], [9, 16, 22]);
+
+module.exports = letterPositions;

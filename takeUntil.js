@@ -48,10 +48,12 @@ const takeUntil = function(array, callback) {
   return result;
 };
 
-const data1 = [-1, -2, -5, 7, 2, -1, 2, 4, 5];
-const results1 = takeUntil(data1, x => x > 0);
-assertArraysEqual(results1, [-1, -2, -5]);
+// const data1 = [-1, -2, -5, 7, 2, -1, 2, 4, 5];
+// const results1 = takeUntil(data1, x => x > 0);
+// assertArraysEqual(results1, [-1, -2, -5]);
 
-const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "never", "been", "to", "Redwood"];
-const results2 = takeUntil(data2, x => x === 'never');
-assertArraysEqual(results2, ["I've", "been", "to", "Hollywood", ",", "I've"]);
+// const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "never", "been", "to", "Redwood"];
+// const results2 = takeUntil(data2, x => x === 'never');
+// assertArraysEqual(results2, ["I've", "been", "to", "Hollywood", ",", "I've"]);
+
+module.exports = takeUntil;

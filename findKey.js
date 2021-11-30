@@ -36,7 +36,7 @@ const givenExample = findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2);
 
-assertEqual(givenExample, "noma");
+// assertEqual(givenExample, "noma");
 
 const animalSounds = {
   cow: 'moo',
@@ -47,8 +47,8 @@ const animalSounds = {
   pig: 'oink'
 };
 
-const returnsSheep = findKey(animalSounds, k => k === 'baah');
-assertEqual(returnsSheep, 'sheep');
+// const returnsSheep = findKey(animalSounds, k => k === 'baah');
+// assertEqual(returnsSheep, 'sheep');
 
 const olympians = {
   dionysus: { symbol: 'grapes' },
@@ -61,8 +61,10 @@ const olympians = {
   hades: { symbol: 'helm of death' }
 };
 
-const returnsHades = findKey(olympians, god => god.symbol === 'helm of death');
-assertEqual(returnsHades, 'hades');
+// const returnsHades = findKey(olympians, god => god.symbol === 'helm of death');
+// assertEqual(returnsHades, 'hades');
 
-const returnsPoseidon = findKey(olympians, god => god.personalInfo && god.personalInfo.residence === 'ocean');
-assertEqual(returnsPoseidon, 'poseidon');
+// const returnsPoseidon = findKey(olympians, god => god.personalInfo && god.personalInfo.residence === 'ocean');
+// assertEqual(returnsPoseidon, 'poseidon');
+
+module.exports = findKey;

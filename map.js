@@ -30,11 +30,13 @@ const map = function(array, callback) {
   return results;
 };
 
-const firstLetter = map(words, word => word[0]);
-const allToOne = map(names, name => 1);
-const nameLengths = map(names, name => name.length);
-const lastLetter = map(names, name => name[name.length - 1]);
+module.exports = map;
+// const firstLetter = map(words, word => word[0]);
+// const allToOne = map(names, name => 1);
+// const nameLengths = map(names, name => name.length);
+// const lastLetter = map(names, name => name[name.length - 1]);
 
-assertArraysEqual(allToOne, [1,1,1,1,1,1]);
-assertArraysEqual(nameLengths, [5,4,6,5,7,7]);
-assertArraysEqual(lastLetter, ['e','a','e','e','e','y']);
+// assertArraysEqual(allToOne, [1,1,1,1,1,1]);
+// assertArraysEqual(nameLengths, [5,4,6,5,7,7]);
+// assertArraysEqual(lastLetter, ['e','a','e','e','e','y']);
+

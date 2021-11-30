@@ -37,15 +37,17 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-const abe = { a: '1', b: '2', e: 5 };
-const bea = { b: '2', e: 5, a: '1' };
+module.exports = assertObjectsEqual;
 
-assertObjectsEqual(abe, bea); // => assertion pass
+// const abe = { a: '1', b: '2', e: 5 };
+// const bea = { b: '2', e: 5, a: '1' };
 
-const cd = { c: '1', d: ['2', 3]};
-const dc = { d: ['2', 3], c: '1'};
-const cd2 = { c: '1', d: ['2', 3, 4]};
+// assertObjectsEqual(abe, bea); // => assertion pass
 
-assertObjectsEqual(cd, dc); // => assertion pass
+// const cd = { c: '1', d: ['2', 3]};
+// const dc = { d: ['2', 3], c: '1'};
+// const cd2 = { c: '1', d: ['2', 3, 4]};
 
-assertObjectsEqual(dc, cd2); // => assertion fail
+// assertObjectsEqual(cd, dc); // => assertion pass
+
+// assertObjectsEqual(dc, cd2); // => assertion fail

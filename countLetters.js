@@ -22,8 +22,10 @@ const countLetters = function(sentence) {
   return results;
 };
 
-assertEqual(countLetters("lighthouse")["h"], 2);
-assertEqual(countLetters("lighthouse")["i"], 1);
-assertEqual(countLetters("lighthouse")["x"], undefined);
-assertEqual(countLetters("functions objects conditionals arrays loops")["a"], 3);
-assertEqual(countLetters("0B2b4B6bbbb")["B"], 2);
+// assertEqual(countLetters("lighthouse")["h"], 2);
+// assertEqual(countLetters("lighthouse")["i"], 1);
+// assertEqual(countLetters("lighthouse")["x"], undefined);
+// assertEqual(countLetters("functions objects conditionals arrays loops")["a"], 3);
+// assertEqual(countLetters("0B2b4B6bbbb")["B"], 2);
+
+module.exports = countLetters;
