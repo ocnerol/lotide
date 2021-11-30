@@ -19,4 +19,5 @@ describe('#head', () => {
   it('should return "abc" for ["abc", "def", "ghi"]', () => {
     assert.strictEqual(head(["abc", "def", "ghi"]), "abc");
   });
+  
 });
