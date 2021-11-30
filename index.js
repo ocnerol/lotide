@@ -12,10 +12,6 @@ const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without')
 
-const assertArraysEqual = require('./assertArraysEqual');
-const assertEqual = require('./assertEqual');
-const assertObjectsEqual = require('./assertObjectsEqual');
-
 
 module.exports = {
 
@@ -32,8 +28,5 @@ module.exports = {
   map,
   takeUntil,
   without,
-  assertArraysEqual,
-  assertEqual,
-  assertObjectsEqual
 
 };
