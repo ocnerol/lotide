@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ocnerol/lotide",
   "version": "1.0.0",
-  "description": "a remake of the lotide package",
+  "description": "a remake of the lotide package as part of an assignment for the Lighthouse Labs Web Development Bootcamp",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/ocnerol/lotide.git"
   },
-  "author": "Lorenço Alvarez Navarrete",
+  "author": {
+    "name": "Lorenço Alvarez Navarrete",
+    "email": "loren.alnav@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ocnerol/lotide/issues"
