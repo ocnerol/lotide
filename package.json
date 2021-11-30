@@ -2,7 +2,7 @@
   "name": "@ocnerol/lotide",
   "version": "1.0.0",
   "description": "a remake of the lotide package as part of an assignment for the Lighthouse Labs Web Development Bootcamp",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
